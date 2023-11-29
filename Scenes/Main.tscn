@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://djj0errfbxjtp"]
 
 [ext_resource type="Texture2D" uid="uid://b075sqqg054xc" path="res://icon.svg" id="1_07f56"]
-[ext_resource type="Script" path="res://Scripts/Char.gd" id="2_nxow0"]
+[ext_resource type="Script" path="res://Scenes/Char/Char.gd" id="2_4weqg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sm4ud"]
 texture = ExtResource("1_07f56")
@@ -29,7 +29,7 @@ layer_0/tile_data = PackedInt32Array(262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 2
 
 [node name="Char" type="RigidBody2D" parent="."]
 gravity_scale = 0.5
-script = ExtResource("2_nxow0")
+script = ExtResource("2_4weqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Char"]
 position = Vector2(379, 238)
