@@ -27,10 +27,12 @@ tile_set = SubResource("TileSet_6qnw5")
 format = 2
 layer_0/tile_data = PackedInt32Array(262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 196616, 0, 0, 131080, 0, 0, 65544, 0, 0, 8, 0, 0, 0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0)
 
-[node name="Char" type="RigidBody2D" parent="."]
-gravity_scale = 0.5
+[node name="Char" type="CharacterBody2D" parent="."]
 script = ExtResource("2_4weqg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Char"]
 position = Vector2(379, 238)
 shape = SubResource("CircleShape2D_sbl4n")
+
+[node name="Camera2D" type="Camera2D" parent="Char"]
+position = Vector2(379, 238)
